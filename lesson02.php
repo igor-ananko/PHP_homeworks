@@ -67,6 +67,24 @@ switch ($task21) {
         echo $task21;
 }
 
+echo "<br>Костыль 3, все равно цикл<br>";
+$task22 = rand(0, 15);
+switch ($task22) {
+    case ($task22 < 15):
+        rec($task22);
+        break;
+    case ($task22 == 15):
+        echo $task22;
+}
+
+function rec($a){
+    if($a > 15){
+        return;
+    }
+    echo $a." ";
+    rec($a+1);
+}
+
 // Задание 3 функции
 function sum($a, $b)
 {
@@ -97,6 +115,7 @@ echo "<br><br>Задание 4 <br>";
 
 $operation = "деление";
 // a и b из задания 1
+// начал читать по select и $_POST, но запутался
 echo mathOp($a, $b, $operation);
 
 function mathOp($arg1, $arg2, $operation)
