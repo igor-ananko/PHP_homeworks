@@ -120,11 +120,47 @@ function mathOp($arg1, $arg2, $operation)
 // Задание 6
 echo "<br><br>Задание 6 <br>";
 
-
 function power($val, $pow)
 {
-    if ($pow > 1)
+    if ($pow == 0)
+        return 1;
+    elseif ($pow == 0)
+        return $val;
+    else
         return $val * power($val, $pow - 1);
 }
+echo power(5, 3);
 
-echo power(2, 4);
+// Задание 7
+echo "<br><br>Задание 7 <br>";
+
+function curHour($h) {
+    if (($h % 10) == 0 || ($h % 10) >= 5){
+    echo $h = $h . " часов ";
+    }
+    elseif ($h % 10 == 1){
+    echo $h = $h . " час ";    
+    }
+    else {
+    echo $h = $h . " часа ";    
+    }
+}
+function curMinute($m) {
+    if (($m % 10) == 0 || ($m >= 11 && $m <= 14) || ($m % 10) >= 5){
+    echo $m = $m . " минут ";    
+    }
+    elseif ($m % 10 == 1){
+    echo $m = $m . " минута ";    
+    }
+    else {
+    echo $m = $m . " минуты ";    
+    }
+}
+
+$h = (int)substr(date("h:i"), 0, 3);
+$m = (int)substr(date("h:i"), -2);
+//$h=10;
+//$m=31;
+
+curHour($h);
+curMinute($m);
