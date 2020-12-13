@@ -60,6 +60,68 @@ body {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+.catalog {
+    padding: 40px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.productList {
+    padding-left: 16px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 30%;
+    justify-content: space-around;
+
+}
+.productName {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.productPicPreveiw {
+    margin-left: auto;
+    margin-right: auto
+}
+.productShortDesc {
+    text-align: justify;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.productPrice {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: red;
+}
+.report {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+.username {
+    width: 10%;
+    background: grey;
+    margin: 5px;
+}
+.reportText {
+    width: 80%;
+    margin: 5px;
+}
+.data {
+    width: 10%;
+    margin: 5px;
+}
+.writeReport {
+    justify-content: center;
+}
+.submitForm {
+    margin: 24px auto;
+}
 .footer {
     margin-top: 64px;
 }
