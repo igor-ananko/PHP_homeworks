@@ -7,6 +7,15 @@ switch($_GET['page']){
      case "gallery":
         include "pages/scan.php";
         break;
+    case "calc":
+        include "pages/calc.php";
+        break;
+    case "catalog":
+        include "pages/catalog.php";
+        break;
+    case "otzyv":
+        include "pages/otzyv.php";
+        break;
     default:
         include "pages/scan.php";
 }
