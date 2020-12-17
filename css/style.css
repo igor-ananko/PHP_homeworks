@@ -31,6 +31,10 @@ body {
     font-size: 32px;
     color: #1F3F68;
     text-align: center;
+    display: block;
+}
+.auth {
+
 }
 .photogallery {
     min-height: 400px;
@@ -121,6 +125,21 @@ body {
 }
 .submitForm {
     margin: 24px auto;
+}
+.cart {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.orderPic {
+    padding: 24px;
+}
+.orderCount {
+    padding: 24px;
+}
+.orderPrice {
+    padding: 24px;
 }
 .footer {
     margin-top: 64px;

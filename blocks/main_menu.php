@@ -1,5 +1,5 @@
 <?php
-    $menu = ["Калькуляторы" => ["/?page=calc" => "_self"], "Каталог товаров" => ["/?page=catalog" => "_self"], "Фотогаллерея" => ["/?page=gallery" => "_self"], "Загрузить фото" => ["/?page=load"=>"_self"], "Отзывы о компании" => ["/?page=otzyv"=>"_self"]];
+    $menu = ["Вход/Регистрация" => ["/?page=login" => "_self"], "Каталог товаров" => ["/?page=catalog" => "_self"], "Фотогаллерея" => ["/?page=gallery" => "_self"], "Загрузить фото" => ["/?page=load"=>"_self"], "Отзывы о компании" => ["/?page=otzyv"=>"_self"]];
 ?>
 <ul class="headerMenu">
 <?php

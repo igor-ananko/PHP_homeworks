@@ -1,7 +1,6 @@
 <?php
 include "config.php";
 
-//print_r($_FILES);
 $path = translit("../images/".$_FILES['photo']['name']);
 $pathPreview = translit("../images/preview/".$_FILES['photo']['name']);
 
