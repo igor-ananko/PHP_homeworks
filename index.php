@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +11,10 @@
 <body>
 <div class="header">
     <div class="container">
-    <?php
-        include "blocks/main_menu.php";
-        include "blocks/header.php";
-    ?>
+        <?php
+        include_once "blocks/main_menu.php";
+        include_once "blocks/header.php";
+        ?>
     </div>
 </div>
 <div class="container">
@@ -24,6 +27,5 @@
 <div class="footer container">
     Подвал сайта
 </div>
-
 </body>
 </html>

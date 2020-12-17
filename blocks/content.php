@@ -4,11 +4,8 @@ switch($_GET['page']){
     case "load":
         include "pages/form.php";
         break;
-     case "gallery":
+    case "gallery":
         include "pages/scan.php";
-        break;
-    case "calc":
-        include "pages/calc.php";
         break;
     case "catalog":
         include "pages/catalog.php";
@@ -16,18 +13,16 @@ switch($_GET['page']){
     case "otzyv":
         include "pages/otzyv.php";
         break;
+    case "cart":
+        include "pages/cart.php";
+        break;
+    case "login":
+        include "pages/login.php";
+        break;
+    case "registration":
+        include "pages/registration.php";
+        break;
     default:
-        include "pages/scan.php";
+        include "pages/catalog.php";
 }
-
-
-//print_r($_SERVER);
-//$path = "files/text.txt";
-//$path = $_SERVER["DOCUMENT_ROOT"]."/files/text.txt";
-//$file = fopen($path,"r");
-//
-//while(!feof($file)){
-//    echo fgets($file)."<br>";
-//}
-//
-//fclose($file);
+?>
